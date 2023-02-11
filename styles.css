@@ -1,0 +1,22 @@
+img {
+height: 253px;
+width: 253px;
+}
+
+.layout-sidebar {
+display: flex;
+flex-flow: row wrap;
+justify-content: flex-start;
+height: 653px;
+width: 256px;
+}
+
+.navbar {
+display: flex;
+flex-flow: row wrap;
+justify-content: flex-end;
+}
+
+.layout-main {
+
+}
