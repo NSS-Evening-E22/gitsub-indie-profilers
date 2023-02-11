@@ -1,168 +1,165 @@
-const reposList = [
+const repoList = [
   {
     id: 1,
-    repoName: "test-repo1",
-    description: "This is the description of the repo.",
-    programmingLanguage: "HTML"
+    name: "test-repo1",
+    description: "This is test repo number 1. Its purpose is to practice creating repos.",
+    programmingLanguage: "HTML",
   },
   {
     id: 2,
-    repoName: "test-repo2",
-    description: "This is the description of the repo.",
-    programmingLanguage: "HTML"
+    name: "test-repo2",
+    description: "This is test repo number 2. Its purpose is to practice creating repos.",
+    programmingLanguage: "JavaScript",
   },
   {
     id: 3,
-    repoName: "test-repo3",
-    description: "This is the description of the repo.",
-    programmingLanguage: "HTML"
+    name: "test-repo3",
+    description: "This is test repo number 3. Its purpose is to practice creating repos.",
+    programmingLanguage: "CSS",
   },
   {
     id: 4,
-    repoName: "test-repo4",
-    description: "This is the description of the repo.",
-    programmingLanguage: "HTML"
+    name: "test-repo4",
+    description: "This is test repo number 4. Its purpose is to practice creating repos.",
+    programmingLanguage: "Python",
   },
   {
     id: 5,
-    repoName: "test-repo5",
-    description: "This is the description of the repo.",
-    programmingLanguage: "HTML"
+    name: "test-repo5",
+    description: "This is test repo number 5. Its purpose is to practice creating repos.",
+    programmingLanguage: "C#",
   },
   {
     id: 6,
-    repoName: "ASSIGNMENT-repo1",
-    description: "This is the description of the repo.",
-    programmingLanguage: "JavaScript"
+    name: "ASSIGNMENT-create-calculator",
+    description: "Created a functioning calculator with all the fancy stuff.",
+    programmingLanguage: "Go",
   },
   {
     id: 7,
-    repoName: "ASSIGNMENT-repo2",
-    description: "This is the description of the repo.",
-    programmingLanguage: "JavaScript"
+    name: "ASSIGNMENT-product-cards",
+    description: "Created product cards for a mock-up website that sells things.",
+    programmingLanguage: "Python",
   },
   {
     id: 8,
-    repoName: "ASSIGNMENT-repo3",
-    description: "This is the description of the repo.",
-    programmingLanguage: "JavaScript"
+    name: "ASSIGNMENT-intro-js-array-methods",
+    description: "Practiced different array methods in JavaScript.",
+    programmingLanguage: "Java",
   },
   {
     id: 9,
-    repoName: "ASSIGNMENT-repo4",
-    description: "This is the description of the repo.",
-    programmingLanguage: "JavaScript"
+    name: "ASSIGNMENT-finish-lesson",
+    description: "Finsihed the lesson we were working on. Which lesson, you ask? THE lesson.",
+    programmingLanguage: "Kotlin",
   },
   {
     id: 10,
-    repoName: "LAB-repo1",
-    description: "This is the description of the repo.",
-    programmingLanguage: "JavaScript"
+    name: "LAB-HTML-Resume",
+    description: "Created a Resume only using HTML. It doesn't look that great, but it was good practice.",
+    programmingLanguage: "PHP",
   },
   {
     id: 11,
-    repoName: "LAB-repo2",
-    description: "This is the description of the repo.",
-    programmingLanguage: "JavaScript"
+    name: "LAB-link-in-bio",
+    description: "In this lab I created a profile page that would go on my own personal website. That's right. I'm important.",
+    programmingLanguage: "Swift",
   },
   {
     id: 12,
-    repoName: "LAB-repo3",
-    description: "This is the description of the repo.",
-    programmingLanguage: "JavaScript"
+    name: "LAB-pet-adoption",
+    description: "This repo contains a webpage of adoptable pets. And dinosaurs for some reason.",
+    programmingLanguage: "R",
   },
   {
     id: 13,
-    repoName: "IND-PROJECT-repo1",
-    description: "This is the description of the repo.",
-    programmingLanguage: "JavaScript"
+    name: "INDIVIDUAL-PROJECT-sorting-hat",
+    description: "Ever wanted to have a wrinkly talking hat decide your fate at 12 years old? Check out this repo.",
+    programmingLanguage: "Ruby",
   },
   {
     id: 14,
-    repoName: "IND-PROJECT-repo2",
-    description: "This is the description of the repo.",
-    programmingLanguage: "JavaScript"
+    name: "INDIVIDUAL-PROJECT-big-boi",
+    description: "It's a big boi. The biggest of the bois.",
+    programmingLanguage: "C"
   },
   {
     id: 15,
-    repoName: "IND-PROJECT-repo3",
-    description: "This is the description of the repo.",
-    programmingLanguage: "JavaScript"
+    name: "INDIVIDUAL-PROJECT-save-the-penguins",
+    description: "Save the penguins. They're all being sent off to war. This senseless violence must end.",
+    programmingLanguage: "C++"
   },
   {
     id: 16,
-    repoName: "CODE-ALONG-repo1",
-    description: "This is the description of the repo.",
-    programmingLanguage: "JavaScript"
+    name: "CODE-ALONG-watch-me-code",
+    description: "Watch me code. Or don't. It's your funeral.",
+    programmingLanguage: "TypeScript",
   },
   {
     id: 17,
-    repoName: "CODE-ALONG-repo2",
-    description: "This is the description of the repo.",
-    programmingLanguage: "JavaScript"
+    name: "CODE-ALONG-figure-it-out",
+    description: "Why can't you just figure it out, Gerald?",
+    programmingLanguage: "SQL",
   },
   {
     id: 18,
-    repoName: "CODE-ALONG-repo3",
-    description: "This is the description of the repo.",
-    programmingLanguage: "JavaScript"
+    name: "CODE-ALONG-joaquin-phoenix",
+    description: "Wait, where did this one come from? Joaquin, are you messing with my repos again? You silly goose.",
+    programmingLanguage: "Nix",
   },
   {
-    id: 16,
-    repoName: "LAB-repo4",
-    description: "This is the description of the repo.",
-    programmingLanguage: "JavaScript"
+    id: 19,
+    name: "LAB-the-sauce",
+    description: "I've been lost in this repo too many times to count.",
+    programmingLanguage: "Scala",
   },
   {
-    id: 16,
-    repoName: "CAPSTONE",
-    description: "This is the description of the repo.",
-    programmingLanguage: "JavaScript"
+    id: 20,
+    name: "CAPSTONE-functioning-time-machine",
+    description: "Sssh. The government can't find out about this repo. Keep this one between us. No, Susan, you can't tell your neighbors.",
+    programmingLanguage: "Shell",
+  },
+  ];
+  
+  
+  //Render to DOM utility function//
+  const renderReposToDom = (divID, htmlToRender) => {
+    const selectedDiv = document.querySelector(divID);
+  
+    selectedDiv.innerHTML = htmlToRender
   }
-];
-
-
-// Render to DOM utility function
-const renderToDom = (divID, htmlToRender) => {
-  const selectedDiv = document.querySelector(divID);
-  selectedDiv.innerHTML = htmlToRender;
-};
-
-// Repo template card
-
-const renderRepos = (arr) => {
-  let domString = "";
-  for (const repo of arr) {
-    domString += `<div class="row">
-    <div class="col-sm-30 mb-3 mb-sm-0">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">${repo.repoName} Public</h5>
-          <p class="card-text">${repo.description}</p>
-          <p class="card-type">${repo.programmingLanguage}</p>
+  
+  //Putting Repo Cards on the DOM//
+  const reposOnDom = (rt_array) => {
+    let rt_domString = "";
+    for (const repo of rt_array) {
+      rt_domString += `<div class="row">
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="repo-card">
+          <div class="card-body">
+            <h5 class="repo-name">${repo.name}</h5>
+            <p class="repo-description">${repo.description}</p>
+            <p class="repo-programmingLanguage">${repo.programmingLanguage}</p>
+            <button class="btn btn-primary" type="submit">Star</button>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>`;
-  }
-
-  renderToDom(".pinnedRepos", domString);
-};
-
-renderRepos(reposList);
-
-
-
-
-
-
-
-
-
-
-const startApp = () => {
-  renderRepos(reposList);
-};
-// events(); // ALWAYS LAST
-
-startApp();
+      </div>`;    
+    }
+  
+  //Render Repos to the DOM//  
+    renderReposToDom (".listOfReposContainer", rt_domString)
+  
+  };
+  
+  reposOnDom(repoList);
+  
+  
+  
+  
+  
+  const startApp = () => {
+    renderReposToDom(repoList);
+  };
+  
+  startApp();
+  
