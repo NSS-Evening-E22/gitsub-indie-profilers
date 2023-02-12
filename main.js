@@ -104,7 +104,7 @@ const repoList = [
   {
     id: 18,
     name: "CODE-ALONG-joaquin-phoenix",
-    description: "Wait, where did this one come from? Joaquin, are you messing with my repos again? You silly goose.",
+    description: "Wait, where did this one come from? Joaquin, are you messing with my repos again? Silly Joaquin. Repos are for kids.",
     programmingLanguage: "Nix",
   },
   {
@@ -154,11 +154,33 @@ const repoList = [
   reposOnDom(repoList);
   
   
-  
-  
-  const startApp = () => {
-    renderReposToDom(repoList);
+//Adding functionality to Create New Repos Form//
+const createRepo = (rt_event) => {
+  rt_event.preventDefault();
+
+  const newRepo = {
+    id: repoList.length + 1,
+    name: document.querySelector("#createNew").value,
+    description: document.querySelector("#repoDescription").value,
+    programmingLanguage: document.querySelector("#programmingLanguage").value,
   };
-  
-  startApp();
-  
+
+  console.log("new repo", newRepo);
+
+  repoList.push(newRepo);
+
+  reposOnDom(repoList);
+
+};
+
+const createNewRepoButton = document.querySelector("#form-submit");
+createNewRepoButton.addEventListener("click", createRepo);
+
+document.getElementById("rt_newRepoForm").reset();
+
+
+const startApp = () => {
+  renderReposToDom(repoList);
+};
+
+startApp();
