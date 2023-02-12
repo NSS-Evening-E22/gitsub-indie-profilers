@@ -1,0 +1,125 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: #0d1117;
+}
+
+#userImage {
+  height: 253px;
+  width: 253px;
+  border-radius: 50%;
+}
+
+#repoImage {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  /* width: 90%; */
+  background-color: #0d1117;
+}
+
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  width: 90%;
+}
+
+.layout-sidebar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  height: 653px;
+  width: 256px;
+}
+
+.layout-main {
+  display: flex;
+  flex-flow: row wrap;
+  /* padding: 40px; */
+}
+
+.layout-top {
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+  /* width: 700px;
+  max-height: 400px;
+  height: 400px; */
+  /* justify-content: flex-end; */
+}
+
+.layout-bottom {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  color: lightgray;
+}
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: space-evenly;
+  font-size: 10px;
+}
+
+.text {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.user-text {
+  color: lightgray;
+}
+
+.pinnedRepos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-color: #30363d;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: 20px;
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+}
+
+.btn {
+  color: lightgray;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-title {
+  color: #58a6ff
+}
+
+.card-text {
+  color: lightgray;
+  font-size: 15px;
+}
+
+.card-type {
+  color: #8b949e;
+}
+
+h3 {
+  color: white
+}
