@@ -1,3 +1,5 @@
+// packages array
+
 const packages = [
   {
     id: 1,
@@ -43,11 +45,13 @@ const packages = [
   },
 ];
 
+// render to dom function
 const renderToDom = (divId, htmlRender) => {
   const packageLoad = document.querySelector(divId);
   packageLoad.innerHTML = htmlRender;
 };
 
+// card to the dom function..and my card
 const cardsToDom = (array) => {
   let html = "";
   for (const package of array) {
@@ -73,63 +77,10 @@ const cardsToDom = (array) => {
 };
 
 cardsToDom(packages);
-//   const packageLoad = document.querySelector("#packageLoad");
-//   packageLoad.addEventListener("onclick", () => {
-//     cardsToDom(packages)
-//     });
-
-// const packFilter = (packageArray, packageType) => {
-//   const arrayOfPacks = [];
-//   for (const packs of packageArray) {
-//     if (packs.type === packageType) arrayOfPacks.push(packs);
-//   }
-//   return arrayOfPacks;
-// };
-// const viewAll = document.querySelector("#viewAll");
-// const docker = document.querySelector("#docker");
-// const apacheMaven = document.querySelector("#apacheMaven");
-// const nuGet = document.querySelector("#nuGet");
-// const rubyGems = document.querySelector("#rubyGems");
-// const npm = document.querySelector("#npm");
-// const containers = document.querySelector("#containers");
-
-// docker.addEventListener("click", () => {
-//   const dockerFilter = packFilter(packages, "docker");
-//   cardsToDom(dockerFilter);
-// });
-
-// apacheMaven.addEventListener("click", () => {
-//   const apacheMavenFilter = packFilter(packages, "apacheMaven");
-//   containers;
-//   cardsToDom(apacheMavenFilter);
-// });
-
-// nuGet.addEventListener("click", () => {
-//   const nuGetFilter = packFilter(packages, "nuGet");
-//   cardsToDom(nuGetFilter);
-// });
-
-// rubyGems.addEventListener("click", () => {
-//   const rubyGemsFilter = packFilter(packages, "rubyGems");
-//   cardsToDom(rubyGemsFilter);
-// });
-
-// npm.addEventListener("click", () => {
-//   const npmFilter = packFilter(packages, "npm");
-//   cardsToDom(npmFilter);
-// });
-
-// containers.addEventListener("click", () => {
-//   const containersFilter = packFilter(packages, "containers");
-//   cardsToDom(containersFilter);
-// });
-
-// viewAll.addEventListener("click", () => {
-//   cardsToDom(packages);
-// });
 
 
 
+//create new package function
 const createPack = (event) => {
   event.preventDefault();
   // grab the values from form
@@ -147,16 +98,16 @@ const createPack = (event) => {
   };
 
   
-  // push to team array
+  // push to packages array
   packages.push(newPack);
 
-  // rerender with new team
+  // rerender with new package
   cardsToDom(packages);
 };
 
 
 
-
+//add an event listener for the form submit and pass it the function (aka callback function)
 const submitButton = document.querySelector("#addPack");
 submitButton.addEventListener("click", createPack);
 
@@ -186,7 +137,7 @@ const startApp = () => {
 
  startApp();
 
-
+// added search function
  function myFunction() {
     var input, filter, ul, li, a, i, txtValue;
     input = document.getElementById("myInput");
@@ -212,13 +163,3 @@ const startApp = () => {
 
 
 
-// const btn = document.querySelector("#btn");
-// const sb = document.querySelector("#framework");
-
-// btn.onclick = (e) => {
-//   e.preventDefault();
-//   const selectedValues = [].filter
-//     .call(sb.options, (option) => option.selected)
-//     .map((option) => option.text);
-//   alert(selectedValues);
-// };
