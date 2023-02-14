@@ -8,8 +8,7 @@ img {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
-  border-bottom: solid #EEEEEE;
-  padding: 10px;
+  width: 90%;
 }
 
 .container {
