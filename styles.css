@@ -12,10 +12,6 @@ img {
   padding: 10px;
 }
 
-.button {
-
-}
-
 .container {
   display: flex;
   flex-flow: row nowrap;
