@@ -1,0 +1,4 @@
+.listOfReposContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
